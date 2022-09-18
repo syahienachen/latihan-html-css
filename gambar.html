@@ -1,99 +1,125 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Elemen Gambar</title>
-    </head>
-    <body>
-        <a href="index.html"><h1>BACK</h1></a>
-        <!--ELEMEN GAMBAR>-->
-        <div>
-            <h1>Gambar</h1>
-            <p>Pada HTML untuk menampilkan sebuah gambar kita bisa menggunakan tag &lt;img&gt;. Berbeda dengan elemen lain, elemen &kt;img&gt; tidak menuliskan konten diantara tag pembuka dan tag penutup sebagaimana tag lainnya. Namun untuk menetapkan gambar yang ditampilkan kita gunakan sebuah atribut src. Contohnya seperti ini:</p>
-<xmp>
-    <img src="https://cdn.logo.com/hotlink-ok/logo-social.png">
-</xmp>
-            <p>Hasil:</p>
+
+<head>
+    <title>Elemen Gambar</title>
+</head>
+
+<body>
+    <a href="index.html">
+        <h1>BACK</h1>
+    </a>
+    <!--ELEMEN GAMBAR>-->
+    <div>
+        <h1>Gambar</h1>
+        <p>Pada HTML untuk menampilkan sebuah gambar kita bisa menggunakan tag &lt;img&gt;. Berbeda dengan elemen lain,
+            elemen &kt;img&gt; tidak menuliskan konten diantara tag pembuka dan tag penutup sebagaimana tag lainnya.
+            Namun untuk menetapkan gambar yang ditampilkan kita gunakan sebuah atribut src. Contohnya seperti ini:</p>
+        <xmp>
             <img src="https://cdn.logo.com/hotlink-ok/logo-social.png">
-            <p>Pada elemen &lt;img&gt; terdapat 5 atribut yaitu:</p>
-            <ol type="1">
-                <li>src</li>
-                <li>alt</li>
-                <li>title</li>
-                <li>width</li>
-                <li>height</li>
-            </ol>
-            
-            <!-- ATRIBUT SRC, ALT, TITLE, WIDTH, HEIGHT-->
-            <div>
-                <h2>Atribut src</h2>
-                <p>atribut src. Atribut ini berfungsi sebagai sumber dari gambar yang ditampilkan. Atribut ini dapat bernilai url gambar atau path gambar lokal dari gambar yang digunakan.</p>
+        </xmp>
+        <p>Hasil:</p>
+        <img src="https://cdn.logo.com/hotlink-ok/logo-social.png">
+        <p>Pada elemen &lt;img&gt; terdapat 5 atribut yaitu:</p>
+        <ol type="1">
+            <li>src</li>
+            <li>alt</li>
+            <li>title</li>
+            <li>width</li>
+            <li>height</li>
+        </ol>
 
-                <h2>Atribut alt</h2>
-                <p>Atribut ini sebenarnya tidak wajib untuk diterapkan, hanya saja atribut ini akan sangat berguna ketika gambar tidak berhasil ditampilkan. Nilai atribut ini merupakan gambaran dari gambar yang ditampilkan dalam bentuk tulisan. Sehingga ketika gambar gagal ditampilkan maka akan memunculkan teks alternatif yang dapat mewakili arti dari gambar tersebut. </p>
+        <!-- ATRIBUT SRC, ALT, TITLE, WIDTH, HEIGHT-->
+        <div>
+            <h2>Atribut src</h2>
+            <p>atribut src. Atribut ini berfungsi sebagai sumber dari gambar yang ditampilkan. Atribut ini dapat
+                bernilai url gambar atau path gambar lokal dari gambar yang digunakan.</p>
 
-                <h2>Atribut title</h2>
-                <p>Atribut title berfungsi sebagai informasi tambahan untuk sebuah gambar. Informasi tersebut akan muncul ketika kita mengarahkan sebuah cursor pada gambar yang ditampilkan.</p>
+            <h2>Atribut alt</h2>
+            <p>Atribut ini sebenarnya tidak wajib untuk diterapkan, hanya saja atribut ini akan sangat berguna ketika
+                gambar tidak berhasil ditampilkan. Nilai atribut ini merupakan gambaran dari gambar yang ditampilkan
+                dalam bentuk tulisan. Sehingga ketika gambar gagal ditampilkan maka akan memunculkan teks alternatif
+                yang dapat mewakili arti dari gambar tersebut. </p>
 
-                <h2>Atribut width</h2>
-                <p>Untuk menentukan lebar gambar kita gunakan atribut width</p>
+            <h2>Atribut title</h2>
+            <p>Atribut title berfungsi sebagai informasi tambahan untuk sebuah gambar. Informasi tersebut akan muncul
+                ketika kita mengarahkan sebuah cursor pada gambar yang ditampilkan.</p>
 
-                <h2>Atribut height</h2>
-                <p>Untuk menentukan tinggi gambar kita gunakan atribut height</p>
-            </div>
+            <h2>Atribut width</h2>
+            <p>Untuk menentukan lebar gambar kita gunakan atribut width</p>
 
-            <!--JENIS FORMAT GAMBAR-->
-            <div>
-                <h2>Jenis Format Gambar</h2>
-                <ol type="1">
-                    <li>Graphics Interchange Format (.gif)</li>
-                    <li>Joint Photographic Expert Group image (.jpg, .jpeg, .jfif, .pjpeg, .pjp)</li>
-                    <li>Portable Network Graphics (.png)</li>
-                    <li>WebP (.webp)</li>
-                    <li>Scalable Vector Graphics (.svg)</li>
-                </ol>
-            </div>
-
-            <!--MENGATUR UKURAN GAMBAR-->
-            <div>
-                <h2>Mengatur Ukuran Gambar</h2>
-                <p>Ketika menggunakan atribut width dan height disarankan hanya gunakan salah satunya. Terkecuali kita menentukan nilai lebar dan tingginya sesuai dengan rasio dari ukuran gambar aslinya.</p>
-                <p>Contohnya, jika kita tetap memaksa untuk menentukan ukuran panjang dan lebar sebuah gambar tanpa menyesuaikan rasionya, maka gambar yang ditampilkan tidak akan proporsional.</p>
-<xmp>
-    <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="gambar logo" title="gambar logo" width="300px" height="50px"><!--Jangan Lakukan Seperti ini-->
-</xmp>
-                <p>hasil:</p>
-                <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="gambar logo" title="gambar logo" width="300px" height="50px">
-
-                <!--Menetapkan Gambar Berdasarkan Lebar-->
-                <h3>Menetapkan ukuran gambar berdasarkan lebarnya</h3>
-                <p>Dengan menetapkan hanya satu atribut ukurannya, maka ukuran lainnya akan mengikuti sesuai dengan rasio gambar aslinya. Contohnya, kita bisa menetapkan ukuran gambar berdasarkan nilai lebarnya saja.</p>
-<xmp>
-    <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="gambar logo" title="gambar logo" width="300px">
-</xmp>
-                <p>hasil:</p>
-                <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="gambar logo" title="gambar logo" width="300px">
-
-                <!--Menetapkan Gambar Berdasarkan Tinggi-->
-                <h3>Menetapkan ukuran gambar berdasarkan tingginya</h3>
-                <p>atau kita bisa tetapkan ukuran gambar berdasarkan tingginya. Dengan begitu nilai lebar akan menyesuaikan nilainya berdasarkan rasio gambar aslinya.</p>
-<xmp>
-    <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="gambar logo" title="gambar logo" height="300px">
-</xmp>
-                <p>hasil:</p>
-                <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="gambar logo" title="gambar logo" height="300px">
-            </div>
-
-            <!--MENGATUR ALAMAT GAMBAR DARI PC SENDIRI-->
-            <div>
-                <h2>Mengatur Alamat Gambar Dari PC Sendiri</h2>
-                <p>sebelumnya kita mensetting alamat gambarnya dari file yg ada di internet kali ini kita akan mensetting alamat gambarnya from pc kita</p>
-<xmp>
-    <img src="assets/img/design-baju.png" alt="design baju" title="baju nutown" width="1000px">
-</xmp>
-                <p>hasil:</p>
-                <img src="assets/img/design-baju.png" alt="design baju" title="baju nutown" width="1000px">
-            </div>
+            <h2>Atribut height</h2>
+            <p>Untuk menentukan tinggi gambar kita gunakan atribut height</p>
         </div>
-        <a href="index.html"><h1>BACK</h1></a>
-    </body>
+
+        <!--JENIS FORMAT GAMBAR-->
+        <div>
+            <h2>Jenis Format Gambar</h2>
+            <ol type="1">
+                <li>Graphics Interchange Format (.gif)</li>
+                <li>Joint Photographic Expert Group image (.jpg, .jpeg, .jfif, .pjpeg, .pjp)</li>
+                <li>Portable Network Graphics (.png)</li>
+                <li>WebP (.webp)</li>
+                <li>Scalable Vector Graphics (.svg)</li>
+            </ol>
+        </div>
+
+        <!--MENGATUR UKURAN GAMBAR-->
+        <div>
+            <h2>Mengatur Ukuran Gambar</h2>
+            <p>Ketika menggunakan atribut width dan height disarankan hanya gunakan salah satunya. Terkecuali kita
+                menentukan nilai lebar dan tingginya sesuai dengan rasio dari ukuran gambar aslinya.</p>
+            <p>Contohnya, jika kita tetap memaksa untuk menentukan ukuran panjang dan lebar sebuah gambar tanpa
+                menyesuaikan rasionya, maka gambar yang ditampilkan tidak akan proporsional.</p>
+            <xmp>
+                <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="gambar logo" title="gambar logo"
+                    width="300px" height="50px">
+                <!--Jangan Lakukan Seperti ini-->
+            </xmp>
+            <p>hasil:</p>
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="gambar logo" title="gambar logo"
+                width="300px" height="50px">
+
+            <!--Menetapkan Gambar Berdasarkan Lebar-->
+            <h3>Menetapkan ukuran gambar berdasarkan lebarnya</h3>
+            <p>Dengan menetapkan hanya satu atribut ukurannya, maka ukuran lainnya akan mengikuti sesuai dengan rasio
+                gambar aslinya. Contohnya, kita bisa menetapkan ukuran gambar berdasarkan nilai lebarnya saja.</p>
+            <xmp>
+                <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="gambar logo" title="gambar logo"
+                    width="300px">
+            </xmp>
+            <p>hasil:</p>
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="gambar logo" title="gambar logo"
+                width="300px">
+
+            <!--Menetapkan Gambar Berdasarkan Tinggi-->
+            <h3>Menetapkan ukuran gambar berdasarkan tingginya</h3>
+            <p>atau kita bisa tetapkan ukuran gambar berdasarkan tingginya. Dengan begitu nilai lebar akan menyesuaikan
+                nilainya berdasarkan rasio gambar aslinya.</p>
+            <xmp>
+                <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="gambar logo" title="gambar logo"
+                    height="300px">
+            </xmp>
+            <p>hasil:</p>
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="gambar logo" title="gambar logo"
+                height="300px">
+        </div>
+
+        <!--MENGATUR ALAMAT GAMBAR DARI PC SENDIRI-->
+        <div>
+            <h2>Mengatur Alamat Gambar Dari PC Sendiri</h2>
+            <p>sebelumnya kita mensetting alamat gambarnya dari file yg ada di internet kali ini kita akan mensetting
+                alamat gambarnya from pc kita</p>
+            <xmp>
+                <img src="assets/image/design-baju.png" alt="design baju" title="baju nutown" width="1000px">
+            </xmp>
+            <p>hasil:</p>
+            <img src="assets/image/design-baju.png" alt="design baju" title="baju nutown" width="1000px">
+        </div>
+    </div>
+    <a href="index.html">
+        <h1>BACK</h1>
+    </a>
+</body>
+
 </html>
