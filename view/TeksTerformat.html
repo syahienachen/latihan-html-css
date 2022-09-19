@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Elemen Teks Terformat</title>
+</head>
+
+<body>
+    <a href="index.html">
+        <h1>BACK</h1>
+    </a>
+    <!--ELEMEN TEKS TERFORMAT>-->
+    <h1>Teks Terformat</h1>
+    <p>
+        Sejauh ini, kita sudah mengenal paragraf, heading dan juga list pada HTML. Tapi masih ada beberapa lagi yang
+        merupakan spesial teks format yang dapat kita gunakan yaitu &lt;blockquote&gt;, &lt;pre&gt;, dan &lt;figure gt;.
+    </p>
+
+    <!-- Long quotations -->
+    <div>
+        <h2>Long quotations</h2>
+        <p>
+            Jika pada konten kita memiliki sebuah kutipan ataupun sebuah testimonial, kita dapat gunakan format long
+            quotations dengan menggunakan tags &lt;blockquote&gt;. Konten di dalam elemen &lt;blockquote&gt; ini dapat
+            berupa sebuah paragraf, heading, ataupun list.
+        </p>
+        <p>
+            Contoh:
+            <xmp>
+                <blockquote>
+                    <p>
+                        Situs web (bahasa Inggris: website) adalah sekumpulan halaman web yang saling berhubungan yang
+                        umumnya
+                        berada pada peladen yang sama berisikan kumpulan informasi yang disediakan secara perorangan,
+                        kelompok,
+                        atau organisasi.
+                    </p>
+                </blockquote>
+            </xmp>
+        </p>
+        <p>
+            Hasil:
+        <p>
+            Situs web (bahasa Inggris: website) adalah sekumpulan halaman web yang saling berhubungan yang
+            umumnya
+            berada pada peladen yang sama berisikan kumpulan informasi yang disediakan secara perorangan,
+            kelompok,
+            atau organisasi.
+        </p>
+        </blockquote>
+        </p>
+    </div>
+
+    <!-- Atribut Blockquote Cite -->
+    <div>
+        <h2>Atribut Cite</h2>
+        <p>
+            Pada elemen ini kita dapat menggunakan atribut cite untuk menentukan sumber URL dari sebuah kutipan (Jika
+            kutipan tersebut bersumber dari sebuah situs website).
+        </p>
+        <p>
+            Contoh:
+            <xmp>
+                <blockquote cite="https://id.wikipedia.org/wiki/Situs_web">
+                    <p>
+                        Situs web (bahasa Inggris: website) adalah sekumpulan halaman web yang saling berhubungan yang
+                        umumnya
+                        berada pada peladen yang sama berisikan kumpulan informasi yang disediakan secara perorangan,
+                        kelompok,
+                        atau organisasi.
+                    </p>
+                </blockquote>
+            </xmp>
+        </p>
+        <p>
+            Hasil:
+        <blockquote cite="https://id.wikipedia.org/wiki/Situs_web">
+            <p>
+                Situs web (bahasa Inggris: website) adalah sekumpulan halaman web yang saling berhubungan yang
+                umumnya
+                berada pada peladen yang sama berisikan kumpulan informasi yang disediakan secara perorangan,
+                kelompok,
+                atau organisasi.
+            </p>
+        </blockquote>
+        </p>
+    </div>
+
+    <!-- Preformatted text -->
+    <div>
+        <h1>Preformatted text</h1>
+        <p>
+            Pada sub-modul sebelumnya, kita sudah mengetahui bahwa HTML akan mengabaikan penulisan spasi yang dituliskan
+            secara berulang dan juga line breaks (baris baru). Tetapi pada beberapa tipe konten seperti contoh kode atau
+            puisi hal tersebut sangat berarti. Dengan begitu, terdapat sebuah elemen yang dapat kita gunakan untuk
+            menampilkan konten sesuai yang kita tulis pada text editor. Untuk menggunakannya, kita gunakan elemen
+            &lt;pre&gt; sebagai pembungkus kontennya. Perhatikan contoh berikut:
+        </p>
+        <P>
+            Contoh:
+            <xmp>
+                <pre>
+                    SAJAK PUTIH
+
+                    Bersandar pada tari warna pelangi
+                    Kau depanku bertudung sutra senja
+                    Di hitam matamu kembang mawar dan melati
+                    Harum rambutmu mengalun bergelut senda
+                    
+                    Sepi menyanyi, malam dalam mendoa tiba
+                    Meriak muka air kolam jiwa
+                    Dan dalam dadaku memerdu lagu
+                    Menarik menari seluruh aku
+                    
+                    Hidup dari hidupku, pintu terbuka
+                    Selama matamu bagiku menengadah
+                    Selama kau darah mengalir dari luka
+                    Antara kita Mati datang tidak membelah...
+                    
+                                        Karya : Chairil Anwar
+                </pre>
+            </xmp>
+        </P>
+        <p>
+            Hasil:
+        <pre>
+                SAJAK PUTIH
+
+                Bersandar pada tari warna pelangi
+                Kau depanku bertudung sutra senja
+                Di hitam matamu kembang mawar dan melati
+                Harum rambutmu mengalun bergelut senda
+                
+                Sepi menyanyi, malam dalam mendoa tiba
+                Meriak muka air kolam jiwa
+                Dan dalam dadaku memerdu lagu
+                Menarik menari seluruh aku
+                
+                Hidup dari hidupku, pintu terbuka
+                Selama matamu bagiku menengadah
+                Selama kau darah mengalir dari luka
+                Antara kita Mati datang tidak membelah...
+                
+                                    Karya : Chairil Anwar
+            </pre>
+        </p>
+    </div>
+
+    <!-- Figure -->
+    <div>
+        <h1>Figure</h1>
+        <p>
+            Elemen ini digunakan untuk merepresentasikan konten tersendiri (self-contained content) seperti ilustrasi,
+            diagram, foto atau bisa juga sebuah baris kode. Banyak hal yang dapat digunakan dalam elemen ini.
+            Elemen ini digunakan untuk mengelompokkan blok konten yang dapat dipindahkan posisinya dari blok utama
+            sebuah dokumen tanpa mempengaruhi arti dari induk dokumen.
+            Di dalam elemen figure kita dapat menuliskan elemen
+            &lt;figcaption&gt; sebagai sebuah caption (judul) untuk konten tersebut. Berikut contoh penggunaan figure
+            pada sebuah konten gambar.
+        </p>
+        <p>
+            Contoh:
+            <xmp>
+                <p>
+                    Dicoding adalah sebuah perusahaan startup yang bertujuan mengembangkan ekosistem developer di
+                    Indonesia.
+                    Berdiri sejak 5 Januari 2015, Dicoding memiliki platform pembelajaran elektronik di laman
+                    Dicoding.com.
+                </p>
+                <figure>
+                    <img src="https://github.com/dicodingacademy/BelajarDasarPemrogramanWeb/raw/image-assets/dicoding-logo.png"
+                        alt="Sicoding Logo" width="200px">
+                    <figcaption>Dicoding</figcaption>
+                </figure>
+                <p>
+                    Materi perdana yang menjadi magnet dari awal berdirinya Dicoding hingga kini adalah kelas Menjadi
+                    Android Developer
+                    Expert. Kelas ini dikembangkan oleh Google Developer Expert in Android, Sidiq Permana dan Head of
+                    Dicoding Academy,
+                    Ahmad Imaduddin. Seperti halnya kelas Picodiploma lain, modul online-nya juga hadir dalam bentuk
+                    buku berjudul sama
+                    yang telah mendapatkan ijin dan ISBN.
+                </p>
+            </xmp>
+        </p>
+
+        <p>
+            Hasil:
+        <p>
+            Dicoding adalah sebuah perusahaan startup yang bertujuan mengembangkan ekosistem developer di
+            Indonesia.
+            Berdiri sejak 5 Januari 2015, Dicoding memiliki platform pembelajaran elektronik di laman
+            Dicoding.com.
+        </p>
+        <figure>
+            <img src="https://github.com/dicodingacademy/BelajarDasarPemrogramanWeb/raw/image-assets/dicoding-logo.png"
+                alt="Sicoding Logo" width="200px">
+            <figcaption>Dicoding</figcaption>
+        </figure>
+        <p>
+            Materi perdana yang menjadi magnet dari awal berdirinya Dicoding hingga kini adalah kelas Menjadi
+            Android Developer
+            Expert. Kelas ini dikembangkan oleh Google Developer Expert in Android, Sidiq Permana dan Head of
+            Dicoding Academy,
+            Ahmad Imaduddin. Seperti halnya kelas Picodiploma lain, modul online-nya juga hadir dalam bentuk
+            buku berjudul sama
+            yang telah mendapatkan ijin dan ISBN.
+        </p>
+        </p>
+
+        <p>
+            Contoh lainnya, figure ini dapat kita gunakan untuk markup sebuah konten puisi.
+            <xmp>
+                <figure>
+                    <pre>
+                        SAJAK PUTIH
+                    
+                        Bersandar pada tari warna pelangi
+                        Kau depanku bertudung sutra senja
+                        Di hitam matamu kembang mawar dan melati
+                        Harum rambutmu mengalun bergelut senda
+
+                        Sepi menyanyi, malam dalam mendoa tiba
+                        Meriak muka air kolam jiwa
+                        Dan dalam dadaku memerdu lagu
+                        Menarik menari seluruh aku
+
+                        Hidup dari hidupku, pintu terbuka
+                        Selama matamu bagiku menengadah
+                        Selama kau darah mengalir dari luka
+                        Antara kita Mati datang tidak membelah...
+                    </pre>
+                    <figcaption>Sajak Putih oleh Charil Anwar</figcaption>
+                </figure>
+            </xmp>
+        </p>
+        <p>
+            Hasil:
+            <figure>
+                <pre>
+                    SAJAK PUTIH
+                
+                    Bersandar pada tari warna pelangi
+                    Kau depanku bertudung sutra senja
+                    Di hitam matamu kembang mawar dan melati
+                    Harum rambutmu mengalun bergelut senda
+
+                    Sepi menyanyi, malam dalam mendoa tiba
+                    Meriak muka air kolam jiwa
+                    Dan dalam dadaku memerdu lagu
+                    Menarik menari seluruh aku
+
+                    Hidup dari hidupku, pintu terbuka
+                    Selama matamu bagiku menengadah
+                    Selama kau darah mengalir dari luka
+                    Antara kita Mati datang tidak membelah...
+                </pre>
+                <figcaption>Sajak Putih oleh Charil Anwar</figcaption>
+            </figure>
+        </p>
+    </div>
+
+
+
+    <a href="index.html">
+        <h1>BACK</h1>
+    </a>
+</body>
+
+</html>
