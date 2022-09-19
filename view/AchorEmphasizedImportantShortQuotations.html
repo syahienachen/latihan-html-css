@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor, Emphasized Text, Important Text, dan Short quotations</title>
+</head>
+
+<body>
+    <a href="index.html">
+        <h1>BACK</h1>
+    </a>
+
+    <h1>Inline Formatting Text</h1>
+    <p>
+        Pada materi kali ini, kita akan mengenal beberapa formatting text yang digunakan dalam sebuah baris teks (inline
+        text). Sebelum menjelaskan elemen inline untuk formatting text yang dapat digunakan, sepertinya kita perlu
+        membahas sekilas mengenai block dan inline.
+        Standarnya elemen HTML memiliki dua sifat yaitu block dan inline. Elemen yang memiliki sifat block selalu
+        membuat baris baru ketika menampilkannya, contohnya seperti elemen paragraf, list, heading, dan lainnya.
+        Berlawanan dengan elemen yang memiliki sifat block, yaitu elemen inline. Elemen ini tidak menambahkan baris baru
+        ketika dibuat. Apa saja elemen tersebut? Mari kita bahas satu persatu.
+    </p>
+
+    <!-- Anchor -->
+    <div>
+        <h2>Anchor</h2>
+        <p>
+            Apa itu anchor? Anchor (jangkar) merupakan elemen yang digunakan untuk membuat sebuah hyperlink ke halaman
+            atau website lain, file, alamat email, atau URL lainnya. Untuk menggunakan elemen ini kita gunakan tag
+            &lt;a&gt;...&lt;a&gt; bersama dengan atribut href untuk menetapkan sebuah target yang akan dituju.
+        </p>
+        <p>Contoh:</p>
+        <xmp>
+            <p>Hubungi kami di</p>
+            <ul>
+                <li><a href="https://example.com">Website</a></li>
+                <li><a href="mailto:info@example.com">Email</a></li>
+                <li><a href="tel:+62123456">Telepon</a></li>
+                <li><a href="#address">Alamat</a></li>
+            </ul>
+        </xmp>
+        <p>Hasil:</p>
+        <p>Hubungi kami di</p>
+        <ul>
+            <li><a href="https://example.com">Website</a></li>
+            <li><a href="mailto:info@example.com">Email</a></li>
+            <li><a href="tel:+62123456">Telepon</a></li>
+            <li><a href="#address">Alamat</a></li>
+        </ul>
+        <p>
+            Selain atribut href, terdapat beberapa atribut khusus yang dapat digunakan pada elemen ini, antara lain:
+        </p>
+        <table rules="all" border="1px">
+            <tr>
+                <th>Atribut</th>
+                <th>Nilai</th>
+                <th>Deskripsi</th>
+            </tr>
+            <tr>
+                <td>download</td>
+                <td>filename</td>
+                <td>Menginstruksikan browser untuk mengunduh pada URL yang ditetapkan daripada mengarahkannya.</td>
+            </tr>
+            <tr>
+                <td>href</td>
+                <td>URL</td>
+                <td>Menetapkan target yang akan diarahkan/unduh ketika pengguna menekan hyperlink</td>
+            </tr>
+            <tr>
+                <td>hreflang</td>
+                <td>language_code</td>
+                <td>Menetapkan bahasa dari dokumen target.</td>
+            </tr>
+            <tr>
+                <td>ping</td>
+                <td>list_of_URLs</td>
+                <td>
+                    Menetapkan URL yang akan diberitahu dengan mengirimkan post request ping pada body oleh browser
+                    (berjalan di belakang layar) ketika target URL pada hyperlink ditekan. Biasanya atribut ini
+                    digunakan untuk pelacakan.
+                </td>
+            </tr>
+            <tr>
+                <td>referrerpolicy</td>
+                <td>
+                    no-referrer,
+                    no-referrer-when-downgrade,
+                    origin,
+                    origin-when-cross-origin,
+                    unsafe-url
+                </td>
+                <td>Menetapkan referensi untuk dikirim pada target.</td>
+            </tr>
+            <tr>
+                <td>rel</td>
+                <td>
+                    alternate,
+                    author,
+                    bookmark,
+                    external,
+                    help,
+                    license,
+                    next,
+                    nofollow,
+                    noreferrer,
+                    noopener,
+                    prev,
+                    search,
+                    tag
+                </td>
+                <td>Menetapkan hubungan antara halaman yang ditampilkan dengan target.</td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td>
+                    _blank,
+                    _parent,
+                    _self,
+                    _top
+                </td>
+                <td>Menetapkan lokasi ketika membuka target contohnya pada sebuah tab, window atau pada tab itu sendiri.
+                </td>
+            </tr>
+            <tr>
+                <td>media</td>
+                <td>media_type</td>
+                <td>Menetapkan tipe media yang digunakan pada target./td>
+        </table>
+    </div>
+
+    <!-- Emphasized text -->
+    <div>
+        <h2>Emphasized text</h2>
+        <p>
+            Gunakan elemen &lt;em&gt; untuk menunjukan bagian kata yang perlu kita tekankan. Elemen ini menunjukan
+            stress
+            emphasis atau konten/kata yang perlu mendapatkan penekanan atau perhatian khusus. Berikut contoh
+            penggunaannya.
+        </p>
+        <p>Contoh:</p>
+        <xmp>
+            <p><em>Oding</em> adalah seorang pelajar</p>
+            <p>Dia adalah seorang <em>pelajar</em></p>
+        </xmp>
+        <p>
+            Pada kalimat pertama, penekanan terdapat pada “siapa” seorang pelajar. Sedangkan pada kalimat kedua,
+            penekanan terdapat pada “apa” yang sedang dijabati atau diperani oleh Oding.
+        </p>
+        <p>
+            Standarnya pada browser sebuah kata yang ditekankan akan ditampilkan dalam gaya miring pada teks nya.
+        </p>
+        <p>Hasil:</p>
+        <p><em>Oding</em> adalah seorang pelajar</p>
+        <p>Dia adalah seorang <em>pelajar</em></p>
+    </div>
+
+    <!-- Important text -->
+    <div>
+        <h2>Important text</h2>
+        <p>
+            Gunakan elemen &lt;strong&gt; untuk menunjukan sebuah teks yang begitu penting (strong importance), serius,
+            ataupun mendesak. Dalam arti teks tersebut harus dapat perhatian lebih dari teks biasa lainnya.
+        </p>
+        <p>Contoh:</p>
+        <xmp>
+            <p>Kesehatan merupakan hal yang penting, jaga pola makan yang teratur dan <strong>jangan sampai makan tengah
+                    malam!</strong></p>
+        </xmp>
+        <p>
+            Standarnya pada browser, sebuah teks yang dibungkus dengan tag &lt;strong&gt; akan ditampilkan secara tebal. Dan
+                ketika pengguna menggunakan pembaca layar (screen reader), suara yang terdengar akan berbeda. Ini
+                mengartikan bahwa teks tersebut penting tidak hanya sekedar tebal.
+        </p>
+        <p>Hasil:</p>
+        <p>Kesehatan merupakan hal yang penting, jaga pola makan yang teratur dan <strong>jangan sampai makan tengah
+                malam!</strong></p>
+    </div>
+
+    &lt;&gt;
+    <!-- Short quotations -->
+    <div>
+        <h2>Short quotations</h2>
+        <p>
+            Gunakan elemen &lt;q&gt; untuk menandai sebuah kutipan dalam sebuah teks. Elemen short quotations berbeda
+            dengan
+            &lt;blockquote&gt;. Elemen ini digunakan untuk kutipan pendek yang terletak di dalam baris (inline).
+        </p>
+        <p>Contoh:</p>
+        <xmp>
+            <p>Sebelum pulang kerja, ia berkata kepadaku: <q>Maaf saya tidak bisa hadir dalam pertemuan nanti</q></p>
+        </xmp>
+        <p>Standarnya pada browser sebuah teks yang diberi markup <q> akan ditampilkan di dalam tanda kutip (Quotation
+                marks).</p>
+        <p>Hasil:</p>
+        <p>Sebelum pulang kerja, ia berkata kepadaku: <q>Maaf saya tidak bisa hadir dalam pertemuan nanti</q></p>
+    </div>
+
+    <a href="index.html">
+        <h1>BACK</h1>
+    </a>
+</body>
+
+</html>
